@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/company-topics",
+      "handler": "company-topic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/company-topics/count",
+      "handler": "company-topic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/company-topics/:id",
+      "handler": "company-topic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/company-topics",
+      "handler": "company-topic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/company-topics/:id",
+      "handler": "company-topic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/company-topics/:id",
+      "handler": "company-topic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

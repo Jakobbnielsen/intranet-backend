@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documents",
+  "info": {
+    "name": "Document"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "documentThumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "documentTitle": {
+      "type": "string"
+    },
+    "documentDescription": {
+      "type": "text"
+    }
+  }
+}

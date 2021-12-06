@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mustRead": {
+      "type": "boolean"
+    },
+    "filePost": {
+      "type": "boolean"
+    },
+    "uploadedDate": {
+      "type": "datetime"
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "fileTitle": {
+      "type": "string"
+    },
+    "fileDescription": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "fileThumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

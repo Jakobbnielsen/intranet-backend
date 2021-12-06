@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "Department": {
+      "type": "string"
+    }
+  }
+}
